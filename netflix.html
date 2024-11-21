@@ -1,0 +1,286 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+        Netflix Clone
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+        }
+    </style>
+</head>
+<body class="text-white">
+<div class="flex">
+    <!-- Sidebar -->
+    <div class="w-16 bg-black flex flex-col items-center py-4 space-y-8 sticky top-0">
+        <a href="#">
+            <i class="fas fa-home text-xl text-red-600">
+            </i>
+        </a>
+        <a href="#">
+            <i class="fas fa-search text-xl">
+            </i>
+        </a>
+        <a href="#">
+            <i class="fas fa-film text-xl">
+            </i>
+        </a>
+        <a href="#">
+            <i class="fas fa-list text-xl">
+            </i>
+        </a>
+        <a href="#">
+            <i class="fas fa-plus text-xl">
+            </i>
+        </a>
+    </div>
+    <!-- Main Content -->
+    <div class="flex-1">
+        <!-- Header Section -->
+        <div class="relative">
+            <img alt="Venom: The Last Dance Poster" class="w-full h-96 object-cover" height="400" src="https://images7.alphacoders.com/136/1364834.png" width="1200"/>
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black to-transparent">
+            </div>
+            <div class="absolute bottom-0 left-0 p-8">
+                <div class="flex items-center space-x-2">
+       <span class="text-red-600 text-2xl font-bold">
+        N
+       </span>
+                    <span class="text-sm">
+        SERIES
+       </span>
+                </div>
+                <div class="flex items-center space-x-4 mt-4">
+                    <div class="flex items-center space-x-1">
+                        <img alt="IMDb logo" class="w-6 h-6" src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg"/>
+                        <span>
+         8.8/10
+        </span>
+                    </div>
+                    <span>
+        2B+ Streams
+       </span>
+                </div>
+                <div class="flex space-x-4 mt-4">
+                    <button class="bg-red-600 text-white px-6 py-2 rounded-full">
+                        Play
+                    </button>
+                    <button class="bg-gray-400 text-black px-6 py-2 rounded-full">
+                        Watch Trailer
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- New This Week Section -->
+        <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4">
+                New this week
+            </h3>
+            <div class="flex space-x-4 overflow-x-auto">
+                <img alt="Stranger Things Season 4 Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/iGq1qWukX4LXP1KrXdWUaMpleftepVQ0PyfdCTOo7XojZsKPB.jpg" width="150"/>
+                <img alt="The Witcher Season 2 Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/v1SDVgmhXMr8JlE4a1Z2RBikW5ThU08WTq4KVRHj9qGnxq8E.jpg" width="150"/>
+                <img alt="Money Heist Season 5 Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/gfu5zxIMQg0QY6cn80iRYMqExnWKW2KOZwG957hJomASjV5JA.jpg" width="150"/>
+                <img alt="Bridgerton Season 2 Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/MIrOP97QexV0P6rNnCeeBlifw1eYwbGmoeP8SG99fMw2TjV5JA.jpg" width="150"/>
+                <img alt="Lupin Part 2 Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/ZJRiapU64l7tNFg0k85UYaFtcS1jyGm7EcsfccfVXhRhGryTA.jpg" width="150"/>
+                <img alt="The Crown Season 4 Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/KKo8L7t3NCbNKZjrOttsaylke1RV88fWawiwcZ90S2geMWlnA.jpg" width="150"/>
+                <img alt="Shadow and Bone Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/FfvjXroCMehm90QfqcfPMRcb3F5CIRFbdlXRNJkxuGSJasKPB.jpg" width="150"/>
+                <img alt="The Umbrella Academy Season 3 Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/1DJfSko0fFpcy0O9ZIEG0D9xsLSRY8RiNaxTNGipkBIaGryTA.jpg" width="150"/>
+            </div>
+        </div>
+        <!-- Trending Now Section -->
+        <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4">
+                Trending Now
+            </h3>
+            <div class="flex space-x-4 overflow-x-auto">
+                <img alt="Squid Game Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/fBGo7MdQ7fqCmk7Xd9OnKmWDHwh9vGdb0HRDJCMffe5D0YVeE.jpg" width="150"/>
+                <img alt="You Season 3 Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/PMFqFIpOv0KxGFEMer57wCoAbqVN1uZefKxqMdWUINMMNWlnA.jpg" width="150"/>
+                <img alt="Sex Education Season 3 Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/xYJXDS1FcKaIDN4NDkr4llGZCy8d705uV92krd7z5wblxq8E.jpg" width="150"/>
+                <img alt="Lucifer Season 6 Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/RekPIZwzlUX9F66yIuXuBS5z6gJmISDD3ipatHtTMK7PjV5JA.jpg" width="150"/>
+                <img alt="Cobra Kai Season 4 Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/KpHJEfYePzkBBEUuAmwu3eHe0GcEVOWpAilRQrQ5Ecf8yYVeE.jpg" width="150"/>
+                <img alt="The Queen's Gambit Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/j2GzOgEgT9omGR2o2PsRM8S2deUdJKvPBVKudk2478qNjV5JA.jpg" width="150"/>
+                <img alt="Ozark Season 4 Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/CUehkvwVmrwtSip0i8YhRKLefpOmBS0aELVRpyVXcNCGNWlnA.jpg" width="150"/>
+                <img alt="The Mandalorian Season 2 Poster" class="w-36 h-56 object-cover rounded-lg" height="225" src="https://storage.googleapis.com/a1aa/image/jlwRv29VTpYOD5ie8YJ9baZfwGCRRxjPVZ11eIsl8c2QNWlnA.jpg" width="150"/>
+            </div>
+        </div>
+        <!-- More Reasons to Join Section -->
+        <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4">
+                More Reasons to Join
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-b from-blue-900 to-purple-900 p-6 rounded-lg relative">
+                    <h4 class="text-xl font-bold mb-4">
+                        Enjoy on your TV
+                    </h4>
+                    <p class="mb-4">
+                        Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+                    </p>
+                    <i class="fas fa-tv text-4xl absolute bottom-4 right-4">
+                    </i>
+                </div>
+                <div class="bg-gradient-to-b from-blue-900 to-purple-900 p-6 rounded-lg relative">
+                    <h4 class="text-xl font-bold mb-4">
+                        Download your shows to watch offline
+                    </h4>
+                    <p class="mb-4">
+                        Save your favorites easily and always have something to watch.
+                    </p>
+                    <i class="fas fa-download text-4xl absolute bottom-4 right-4">
+                    </i>
+                </div>
+                <div class="bg-gradient-to-b from-blue-900 to-purple-900 p-6 rounded-lg relative">
+                    <h4 class="text-xl font-bold mb-4">
+                        Watch everywhere
+                    </h4>
+                    <p class="mb-4">
+                        Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                    </p>
+                    <i class="fas fa-mobile-alt text-4xl absolute bottom-4 right-4">
+                    </i>
+                </div>
+                <div class="bg-gradient-to-b from-blue-900 to-purple-900 p-6 rounded-lg relative">
+                    <h4 class="text-xl font-bold mb-4">
+                        Create profiles for kids
+                    </h4>
+                    <p class="mb-4">
+                        Send kids on adventures with their favorite characters in a space made just for them — free with your membership.
+                    </p>
+                    <i class="fas fa-child text-4xl absolute bottom-4 right-4">
+                    </i>
+                </div>
+            </div>
+        </div>
+        <!-- Frequently Asked Questions Section -->
+        <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4">
+                Frequently Asked Questions
+            </h3>
+            <div class="space-y-2">
+                <div class="bg-gray-700 p-4 flex justify-between items-center">
+       <span>
+        What is Netflix?
+       </span>
+                    <i class="fas fa-plus">
+                    </i>
+                </div>
+                <div class="bg-gray-700 p-4 flex justify-between items-center">
+       <span>
+        How much does Netflix cost?
+       </span>
+                    <i class="fas fa-plus">
+                    </i>
+                </div>
+                <div class="bg-gray-700 p-4 flex justify-between items-center">
+       <span>
+        Where can I watch?
+       </span>
+                    <i class="fas fa-plus">
+                    </i>
+                </div>
+                <div class="bg-gray-700 p-4 flex justify-between items-center">
+       <span>
+        How do I cancel?
+       </span>
+                    <i class="fas fa-plus">
+                    </i>
+                </div>
+                <div class="bg-gray-700 p-4 flex justify-between items-center">
+       <span>
+        What can I watch on Netflix?
+       </span>
+                    <i class="fas fa-plus">
+                    </i>
+                </div>
+                <div class="bg-gray-700 p-4 flex justify-between items-center">
+       <span>
+        Is Netflix good for kids?
+       </span>
+                    <i class="fas fa-plus">
+                    </i>
+                </div>
+            </div>
+        </div>
+        <!-- Ready to Watch Section -->
+        <div class="flex flex-col items-center justify-center p-8 bg-black">
+            <p class="text-lg mb-4">
+                Ready to watch? Enter your email to create or restart your membership.
+            </p>
+            <div class="flex items-center">
+                <input class="p-4 w-96 bg-gray-800 text-white border border-gray-700 rounded-l-md focus:outline-none" placeholder="Email address" type="email"/>
+                <button class="p-4 bg-red-600 text-white rounded-r-md hover:bg-red-700 focus:outline-none">
+                    Get Started
+                    <i class="fas fa-chevron-right">
+                    </i>
+                </button>
+            </div>
+        </div>
+        <!-- Footer Section -->
+        <div class="p-8 bg-black">
+            <p class="mb-4 text-center">
+                Questions? Call
+                <a class="text-blue-500" href="tel:1-800-889-027">
+                    1-800-889-027
+                </a>
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-400 text-center">
+                <a class="hover:underline" href="#">
+                    FAQ
+                </a>
+                <a class="hover:underline" href="#">
+                    Help Center
+                </a>
+                <a class="hover:underline" href="#">
+                    Account
+                </a>
+                <a class="hover:underline" href="#">
+                    Media Center
+                </a>
+                <a class="hover:underline" href="#">
+                    Investor Relations
+                </a>
+                <a class="hover:underline" href="#">
+                    Jobs
+                </a>
+                <a class="hover:underline" href="#">
+                    Redeem Gift Cards
+                </a>
+                <a class="hover:underline" href="#">
+                    Ways to Watch
+                </a>
+                <a class="hover:underline" href="#">
+                    Terms of Use
+                </a>
+                <a class="hover:underline" href="#">
+                    Privacy
+                </a>
+                <a class="hover:underline" href="#">
+                    Cookie Preferences
+                </a>
+                <a class="hover:underline" href="#">
+                    Corporate Information
+                </a>
+                <a class="hover:underline" href="#">
+                    Contact Us
+                </a>
+                <a class="hover:underline" href="#">
+                    Speed Test
+                </a>
+                <a class="hover:underline" href="#">
+                    Legal Notices
+                </a>
+                <a class="hover:underline" href="#">
+                    Only on Netflix
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
